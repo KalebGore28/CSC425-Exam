@@ -23,7 +23,7 @@ const WelcomePage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_7r1x8jg', 'template_7y3q9xg', e.target, 'user_7r1x8jg')
+    emailjs.sendForm('service_8wpi5pw', 'template_l5r223g', e.target, 'PM56TrCybF05MBdwr')
       .then((result) => {
         console.log('Email sent successfully:', result.text);
         window.location.reload();  // This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
@@ -39,11 +39,6 @@ const WelcomePage = () => {
     marginBottom: '10px',
   }
 
-  const buttonStyles = {
-    width: '100px',
-    height: '30px',
-    marginBottom: '10px',
-  }
 
   return (
     <div style={mainDiv}>
