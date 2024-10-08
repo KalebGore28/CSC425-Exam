@@ -26,7 +26,7 @@ const WelcomePage = () => {
     emailjs.sendForm('service_8wpi5pw', 'template_l5r223g', e.target, 'PM56TrCybF05MBdwr')
       .then((result) => {
         console.log('Email sent successfully:', result.text);
-        window.location.reload();  // This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        window.location.reload();
       }, (error) => {
         console.log('Error sending email:', error.text);
       });
