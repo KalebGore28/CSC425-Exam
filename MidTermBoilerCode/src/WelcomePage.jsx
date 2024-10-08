@@ -47,13 +47,13 @@ const WelcomePage = () => {
 
       <form onSubmit={handleSubmit}>
         <p>Enter your username</p>
-        <input type="text" placeholder='Username' style={textBoxStyles} />
+        <input type="text" name="username" placeholder='Username' style={textBoxStyles} />
         <p>Enter your email</p>
-        <input type="text" placeholder='Email' style={textBoxStyles} />
+        <input type="text" name="email" placeholder='Email' style={textBoxStyles} />
         <p>Enter your first name</p>
-        <input type="text" placeholder='First Name' style={textBoxStyles} />
+        <input type="text" name="first_name" placeholder='First Name' style={textBoxStyles} />
         <p>Enter your last name</p>
-        <input type="text" placeholder='Last Name' style={textBoxStyles} />
+        <input type="text" name="last_name" placeholder='Last Name' style={textBoxStyles} />
         <br />
         <button type="submit">Submit</button>
       </form>
